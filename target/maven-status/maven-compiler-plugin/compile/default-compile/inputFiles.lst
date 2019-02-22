@@ -1,0 +1,6 @@
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/model/package-info.java
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/service/package-info.java
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/dao/package-info.java
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/model/Note.java
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/service/NoteService.java
+/Users/josestricklin/eclipse-workspace/api/src/main/java/api/notesAPI/dao/NoteDAO.java

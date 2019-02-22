@@ -20,8 +20,6 @@ import api.notesAPI.model.Note;
 @Path("/")
 public class NoteService {
 
-    // URI:
-    // /contextPath/servletPath/Notes
     @GET
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public List<Note> getNotes_JSON(@QueryParam("query") String query) {
@@ -34,15 +32,12 @@ public class NoteService {
     				filteredNotes.add(note);
     			}
     		}
-//    		System.out.println(query);
     		return filteredNotes;
     	} else {
     		return listOfNotes;
     	}
     }
  
-    // URI:
-    // /contextPath/servletPath/Notes/{id}
     @GET
     @Path("/{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
@@ -50,16 +45,12 @@ public class NoteService {
         return NoteDAO.getNote(id);
     }
  
-    // URI:
-    // /contextPath/servletPath/Notes
     @POST
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public Note addNote(Note note) {
         return NoteDAO.addNote(note);
     }
  
-    // URI:
-    // /contextPath/servletPath/Notes
     @PUT
     @Path("/{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
