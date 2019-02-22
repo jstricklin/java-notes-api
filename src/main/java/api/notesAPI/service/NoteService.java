@@ -46,9 +46,10 @@ public class NoteService {
     // URI:
     // /contextPath/servletPath/Notes
     @PUT
+    @Path("/{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    public Note updateNote(Note note) {
-        return NoteDAO.updateNote(note);
+    public Note updateNote(@PathParam("id") Integer id, Note note) {
+        return NoteDAO.updateNote(id, note);
     }
  
     @DELETE

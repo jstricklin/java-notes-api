@@ -26,7 +26,7 @@ public class Note {
         return id;
     }
  
-    public Integer setid(Integer id) {
+    public Integer setId(Integer id) {
         this.id = id;
         return id;
     }

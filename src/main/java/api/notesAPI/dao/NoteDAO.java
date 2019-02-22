@@ -31,12 +31,12 @@ public class NoteDAO {
  
     public static Note addNote(Note note) {
     	Integer newId = noteMap.values().toArray(new Note[0]).length + 1;
-        noteMap.put(note.setid(newId), note);
+        noteMap.put(note.setId(newId), note);
         return note;
     }
  
-    public static Note updateNote(Note note) {
-        noteMap.put(note.getid(), note);
+    public static Note updateNote(Integer id, Note note) {
+        noteMap.put(note.setId(id), note);
         return note;
     }
  
