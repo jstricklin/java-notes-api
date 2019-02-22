@@ -31,7 +31,7 @@ public class NoteService {
     @GET
     @Path("/{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    public Note getNote(@PathParam("id") String id) {
+    public Note getNote(@PathParam("id") Integer id) {
         return NoteDAO.getNote(id);
     }
  
@@ -54,7 +54,7 @@ public class NoteService {
     @DELETE
     @Path("/{id}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    public void deleteNote(@PathParam("id") String id) {
+    public void deleteNote(@PathParam("id") Integer id) {
         NoteDAO.deleteNote(id);
     }
  

@@ -25,12 +25,13 @@ public class NoteDAO {
         noteMap.put(note3.getid(), note3);
     }
  
-    public static Note getNote(String id) {
+    public static Note getNote(Integer id) {
         return noteMap.get(id);
     }
  
     public static Note addNote(Note note) {
-        noteMap.put(note.getid(), note);
+    	Integer newId = noteMap.values().toArray(new Note[0]).length + 1;
+        noteMap.put(note.setid(newId), note);
         return note;
     }
  
@@ -39,7 +40,7 @@ public class NoteDAO {
         return note;
     }
  
-    public static void deleteNote(String id) {
+    public static void deleteNote(Integer id) {
         noteMap.remove(id);
     }
  

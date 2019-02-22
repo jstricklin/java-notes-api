@@ -26,8 +26,9 @@ public class Note {
         return id;
     }
  
-    public void setid(Integer id) {
+    public Integer setid(Integer id) {
         this.id = id;
+        return id;
     }
  
     public String getbody() {
