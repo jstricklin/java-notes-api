@@ -1,7 +1,9 @@
 package api.notesAPI.service;
 
+import java.util.ArrayList;
 import java.util.List;
- 
+import java.util.regex.Pattern;
+
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -9,6 +11,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
  
 import api.notesAPI.dao.NoteDAO;
@@ -21,9 +24,21 @@ public class NoteService {
     // /contextPath/servletPath/Notes
     @GET
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-    public List<Note> getNotes_JSON() {
-        List<Note> listOfNotes = NoteDAO.getAllNotes();
-        return listOfNotes;
+    public List<Note> getNotes_JSON(@QueryParam("query") String query) {
+		List<Note> listOfNotes = NoteDAO.getAllNotes();
+    	if (query != null) {
+    		List<Note> filteredNotes = new ArrayList<Note>();
+    		for (Note note: listOfNotes) {
+    			Boolean match = Pattern.compile(Pattern.quote(query), Pattern.CASE_INSENSITIVE).matcher(note.getBody()).find();
+    			if (match) {
+    				filteredNotes.add(note);
+    			}
+    		}
+//    		System.out.println(query);
+    		return filteredNotes;
+    	} else {
+    		return listOfNotes;
+    	}
     }
  
     // URI:

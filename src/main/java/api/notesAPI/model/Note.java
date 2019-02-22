@@ -31,11 +31,11 @@ public class Note {
         return id;
     }
  
-    public String getbody() {
+    public String getBody() {
         return body;
     }
  
-    public void setbody(String body) {
+    public void setBody(String body) {
         this.body = body;
     }
  
