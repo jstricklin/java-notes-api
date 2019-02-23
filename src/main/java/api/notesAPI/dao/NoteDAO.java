@@ -18,7 +18,7 @@ public class NoteDAO {
     private static void initNotes() {
         Note note1 = new Note(1, "Ask Larry about those TPS reports!");
         Note note2 = new Note(2, "Pick up milk!");
-        Note note3 = new Note(3, "Do some other stuff that I forget.");
+        Note note3 = new Note(3, "Do some other stuff.");
  
         noteMap.put(note1.getid(), note1);
         noteMap.put(note2.getid(), note2);
