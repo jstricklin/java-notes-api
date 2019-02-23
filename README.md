@@ -26,10 +26,10 @@ Fetch for notes by query parameter:
 `GET /api/notes/?query={parameter}`
 
 Create new note: 
-`POST /api/notes BODY {"body" : "Pick up milk."}'`
+`POST /api/notes BODY {"body" : "Pick up milk."}`
 
 Update note: 
-`PUT /api/notes/{id} BODY {"body" : "Water the plant."}'`
+`PUT /api/notes/{id} BODY {"body" : "Water the plant."}`
 
 Delete note: 
 `DELETE /api/notes/{id}`
