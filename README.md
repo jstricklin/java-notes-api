@@ -14,6 +14,8 @@ The easiest way to run this server on your localhost is to:
 
 - use Postman, HTTPie/cURL, or any browser to reach the server
 
+- CTRL-C to stop the server process
+
 ### Routes
 
 Fetch all notes: 
@@ -26,10 +28,10 @@ Fetch for notes by query parameter:
 `GET /api/notes/?query={parameter}`
 
 Create new note: 
-`POST /api/notes BODY note content`
+`POST /api/notes BODY {"body" : "Pick up milk."}'`
 
 Update note: 
-`PUT /api/notes/{id} BODY note content`
+`PUT /api/notes/{id} BODY {"body" : "Water the plant."}'`
 
 Delete note: 
 `DELETE /api/notes/{id}`
