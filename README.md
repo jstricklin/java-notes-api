@@ -16,4 +16,21 @@ The easiest way to run this server on your localhost is to:
 
 ### Routes
 
+Fetch all notes
+`GET /api/notes`
+
+Fetch note by id
+`GET /api/notes/{id}`
+
+Fetch for notes by query parameter
+`GET /api/notes/?query={parameter}`
+
+Create new note
+`POST /api/notes BODY note content`
+
+Update note
+`PUT /api/notes/{id} BODY note content`
+
+Delete note
+`DELETE /api/notes/{id}`
 
