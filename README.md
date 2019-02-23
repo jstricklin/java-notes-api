@@ -23,7 +23,7 @@ Fetch note by id:
 `GET /api/notes/{id}`
 
 Fetch for notes by query parameter: 
-`GET /api/notes/?query={parameter}`
+`GET /api/notes/?query=parameter`
 
 Create new note: 
 `POST /api/notes BODY {"body" : "Pick up milk."}`
