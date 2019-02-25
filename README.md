@@ -1,4 +1,4 @@
-# Levels Beyond Java Note API
+# Java Notes API
 
 >#### Note 
 >
