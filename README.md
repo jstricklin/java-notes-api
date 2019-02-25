@@ -1,7 +1,5 @@
 # Levels Beyond Java Note API
 
-### Installation
-
 >#### Note 
 >
 >This server uses Maven to pack its dependencies and run the the server locally, and requires Java 1.7+
@@ -9,6 +7,9 @@
 >To install Java type the command below into your terminal
 >
 >```brew cask install java```
+
+
+### Installation
 
 The easiest way to run this server on your localhost is to:
 
