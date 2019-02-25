@@ -12,7 +12,7 @@ public class Note {
     private String body;
  
  
-    // This default constructor is required if there are other constructors.
+
     public Note() {
  
     }
