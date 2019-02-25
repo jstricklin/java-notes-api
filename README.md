@@ -3,7 +3,6 @@
 ### Installation
 
 >Note: This server uses Maven to pack its dependencies and run the the server on your machine and requires Java 1.7+
-
 >To install Java type the command below into your terminal
 >
 >```brew cask install java```
