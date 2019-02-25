@@ -11,10 +11,11 @@
 
 ### Installation
 
-The easiest way to run this server on your localhost is to:
+To install and run this server on your localhost:
 
+- Clone this repo and cd into the new directory
 
-- For MacOS type the command below into your terminal
+- On MacOS, type the command below into your terminal
 
 ```brew install maven```
 
