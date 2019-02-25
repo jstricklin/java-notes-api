@@ -13,11 +13,11 @@
 
 To install and run this server on your localhost:
 
-- Clone this repo and cd into the new directory
-
 - On MacOS, type the command below into your terminal
 
 ```brew install maven```
+
+- Clone this repo and cd into the new directory
 
 - type the command below inside the repo to run the server on locahost:8080
 
